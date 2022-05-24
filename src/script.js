@@ -14,7 +14,8 @@ element.addEventListener ('click', function(e) {
 });
 });
     //Revisando cartas
-
+    let count = 0;
+    const modal= document.querySelector(".modal");
 const checkCards = (e) => {
 const clickedCard = e.target;
 clickedCard.classList.add("flippedCard")
@@ -23,16 +24,21 @@ const flipped = document.querySelectorAll(".flippedCard");
   if (flipped.length == 2) {
     
     if (flipped[0].getAttribute("name") === flipped[1].getAttribute("name")){
+      count++;
+      console.log(count);
       flipped.forEach((clickedCard) => {
         clickedCard.classList.remove("flippedCard")
         clickedCard.style.pointerEvents= "none";
+        if (count === 5) {
+          modal.classList.add("modal--show");
+        }
+        
       });
     } else {
       flipped.forEach((clickedCard) => {
       clickedCard.classList.remove("flippedCard")
       setTimeout(() => clickedCard.classList.remove("toggleCard"), 500)})
     }
-       
-     
     }
   } 
+  
