@@ -1,13 +1,11 @@
 import {createdBoard} from './components/appOval.js';
 import data from './data/geometry/dataOval.js';
-
 let geometryImages= data.items;
 let board= createdBoard(geometryImages);
 const father = document.getElementById("father");
 father.appendChild(board);
-  
-let acW= Array.from(card);
-acW.forEach(element =>{
+let cardList= document.querySelectorAll('.wrap .card');
+cardList.forEach(element =>{
 element.addEventListener ('click', function(e) {
  element.classList.toggle("toggleCard");
    checkCards(e);
@@ -25,14 +23,12 @@ const flipped = document.querySelectorAll(".flippedCard");
     
     if (flipped[0].getAttribute("name") === flipped[1].getAttribute("name")){
       count++;
-      console.log(count);
       flipped.forEach((clickedCard) => {
         clickedCard.classList.remove("flippedCard")
         clickedCard.style.pointerEvents= "none";
-        if (count === 5) {
+        if (count === 4) {
           modal.classList.add("modal--show");
         }
-        
       });
     } else {
       flipped.forEach((clickedCard) => {
@@ -41,4 +37,3 @@ const flipped = document.querySelectorAll(".flippedCard");
     }
     }
   } 
-  
