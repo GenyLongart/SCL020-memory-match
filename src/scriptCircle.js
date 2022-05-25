@@ -4,8 +4,8 @@ let geometryImages= data.items;
 let board= createdBoard(geometryImages);
 const father = document.getElementById("father");
 father.appendChild(board);
-let acW= Array.from(card);
-acW.forEach(element =>{
+let cardList= document.querySelectorAll('.wrap .card');
+cardList.forEach(element =>{
 element.addEventListener ('click', function(e) {
  element.classList.toggle("toggleCard");
    checkCards(e);
