@@ -1,0 +1,121 @@
+*{
+    background-color: #05eeee;
+    margin: 1.5px;
+    padding: 0px;  
+}
+.back{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7BCC10;
+    font-family:'luckiest guy', cursive;
+    margin-left: 50px;
+  margin-top: 25px;
+}
+
+
+
+.dificulty{
+    color:white;
+    font-family: 'luckiest guy', cursive;
+    display:flex;
+    justify-content: center; 
+    font-size:25px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+    margin-bottom: 40px;  
+   
+
+}
+.images-box{
+  display: flex;
+  justify-content: center;
+  
+}
+.a{
+    display:inline-block;
+    justify-content:space-evenly;
+  margin-right: 45px;
+}
+    
+.b{
+    display:inline-block;
+    justify-content: space-evenly;
+    }
+.triangle1{
+  margin-top: 20px;
+}
+.oval1{
+  margin-top: 30px;
+}
+.circle1{
+  margin-left:30px;
+}
+@media screen and (max-width:427px){
+    img{
+      width: 80px;
+      height:80px;
+    }
+    .oval1 img{
+      width:105px;
+      margin-left: 15px;
+    }
+    .dificulty{
+      color:white;
+      font-family: 'luckiest guy', cursive;
+      display:flex;
+      justify-content: center; 
+      font-size:14px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+      margin-bottom: 40px;  
+      margin-top: 40px;
+    }
+    .back{
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #7BCC10;
+      font-family:'luckiest guy', cursive;
+      margin-left: 50px;
+    margin-top: 25px;
+      font-size: 10px;
+  }  
+  }
+  @media screen and (min-width:427px) and (max-width:768px){
+  img{
+      width: 140px;
+      height:140px;
+    }
+    .oval1 img{
+      width:179px;
+      margin-left: 15px;
+    }
+    .dificulty{
+      color:white;
+      font-family: 'luckiest guy', cursive;
+      display:flex;
+      justify-content: center; 
+      font-size:18px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+      margin-bottom: 40px;  
+      margin-top: 40px;
+    }
+    .back{
+      width: 50px;
+      height: 50px;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #7BCC10;
+      font-family:'luckiest guy', cursive;
+      margin-left: 50px;
+    margin-top: 25px;
+      font-size: 12px;
+  }  
+  }

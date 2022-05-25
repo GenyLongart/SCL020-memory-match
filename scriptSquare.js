@@ -1,0 +1,41 @@
+import {createdBoard} from './components/appOval.js';
+import data from './data/geometry/dataSquare.js';
+
+let geometryImages= data.items;
+let board= createdBoard(geometryImages);
+const father = document.getElementById("father");
+father.appendChild(board);
+  
+let acW= Array.from(card);
+acW.forEach(element =>{
+element.addEventListener ('click', function(e) {
+ element.classList.toggle("toggleCard");
+   checkCards(e);
+});
+});
+    //Revisando cartas
+    let count = 0;
+    const modal= document.querySelector(".modal");
+const checkCards = (e) => {
+const clickedCard = e.target;
+clickedCard.classList.add("flippedCard")
+const flipped = document.querySelectorAll(".flippedCard");
+
+  if (flipped.length == 2) {
+    
+    if (flipped[0].getAttribute("name") === flipped[1].getAttribute("name")){
+      count++;
+      flipped.forEach((clickedCard) => {
+        clickedCard.classList.remove("flippedCard")
+        clickedCard.style.pointerEvents= "none";
+        if (count === 2) {
+          modal.classList.add("modal--show");
+        }
+      });
+    } else {
+      flipped.forEach((clickedCard) => {
+      clickedCard.classList.remove("flippedCard")
+      setTimeout(() => clickedCard.classList.remove("toggleCard"), 500)})
+    }
+    }
+  } 
