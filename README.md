@@ -22,6 +22,10 @@ Y este fue el resultado de nuestro prototipo de alta:
 
 Como se demuestra en la imagen anterior, decidimos utilizar colores vivos y que resaltaran a la vista; y optamos por la menor cantidad de elementos por interfaz para hacerlo más amigable.
 
+##Test de Usabilidad:
+
+![](./test-usabilidad-MM%20(2).png)
+
 ##La interfaz permite…
 
 La personalización de la experiencia del usuario, ya que contiene cuatro niveles de dificultad que van de 4 a 10 cartas.
