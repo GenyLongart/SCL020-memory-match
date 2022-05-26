@@ -1,0 +1,125 @@
+*{  
+    margin: 0px;
+    padding:0px; 
+    }
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(232,13,150,1) 0%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+      }
+.back{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7BCC10;
+    font-family:'luckiest guy', cursive;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.bigContainer{
+    display:flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+.container{
+  width: 700px;
+  height:440px;
+  background-color: white;
+  font-family:'luckiest guy', cursive;
+  color:#f3e30a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-top: 120px;
+  font-size: 40px;
+  padding: 20px;
+  line-height: 40px;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  place-items: center;
+}
+@media screen and (max-width:425px){
+    .back{
+        width: 55px;
+        height: 55px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7BCC10;
+        font-family:'luckiest guy', cursive;
+        font-size: 15px;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .bigContainer{
+        display:flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+    }
+    .container{
+        width: 330px;
+        height:450px;
+        background-color: white;
+        font-family:'luckiest guy', cursive;
+        color:#f3e30a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px;
+        margin-top: 150px;
+        margin-left: -80px;
+        font-size: 25px;
+        padding: 20px;
+        line-height: 30px;
+        text-align: center;
+        -webkit-text-stroke: 1px black;
+        place-items: center;
+      }
+}
+@media screen and (min-width:426px) and (max-width:768px){
+    .back{
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #7BCC10;
+        font-family:'luckiest guy', cursive;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+    .bigContainer{
+        display:flex;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+    }
+    .container{
+      width: 500px;
+      height:550px;
+      background-color: white;
+      font-family:'luckiest guy', cursive;
+      color:#f3e30a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      margin-top: 220px;
+      margin-left: -70px;
+      font-size: 35px;
+      padding: 20px;
+      line-height: 35px;
+      text-align: center;
+      -webkit-text-stroke: 1px black;
+      place-items: center;
+    }
+}
