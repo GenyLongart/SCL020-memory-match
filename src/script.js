@@ -26,7 +26,7 @@ const flipped = document.querySelectorAll(".flippedCard");
       flipped.forEach((clickedCard) => {
         clickedCard.classList.remove("flippedCard")
         clickedCard.style.pointerEvents= "none";
-        if (count === 4) {
+        if (count === 5) {
           modal.classList.add("modal--show");
         }
       });

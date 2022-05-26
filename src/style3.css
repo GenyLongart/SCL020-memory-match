@@ -179,6 +179,22 @@ Transform: rotateY(0deg);
     color: #F26250;
     background-color: #fff;
 }
+.modal__close2{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1533db;
+    padding: 1em 3em;
+    border: 1px solid ;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close2:hover{
+    color: #f7270b;
+    background-color: #fff;
+}
 
 
 @media (max-width:800px) {
@@ -231,8 +247,7 @@ Transform: rotateY(0deg);
         margin-left: 15px;
         grid-column-gap: 20px;
         justify-content: center;
-        margin-bottom: 10px;
-        
+        margin-top: 20px;
         }
     img{
         width: 80px;
